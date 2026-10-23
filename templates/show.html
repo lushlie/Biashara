@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactPage</title>
+
+{%load static %}
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}">
+<script src="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}"></script>
+
+</head>
+<body>
+    
+
+<h1 class="text-center text-danger">All contacts</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eius iusto totam illo repellendus quidem sint fugit nulla neque nemo eligendi beatae, veniam eum qui provident, similique laboriosam ipsam animi.
+Quibusdam aliquid, ducimus eveniet non deserunt quo possimus, eligendi impedit cumque, dicta ipsum sit sed earum repellat. Maxime quod, voluptas rem temporibus dolor, ut qui eligendi ad minus debitis totam.</p>
+
+<table class="table table-hover">
+<tr>
+<th class=text-danger>Name</th>
+<th class=text-danger>Email</th>
+<th class=text-danger>Subject</th>
+<th class=text-danger>Message</th>
+</tr>
+
+{%for x in all%}
+ 
+<tr>
+
+<td>{{x.name}}</td>
+<td>{{x.email}}</td>
+<td>{{x.subject}}</td>
+<td>{{x.message}}</td>
+
+</tr>
+
+{%endfor%}
+
+</table>
+
+</body>
+</html>
