@@ -6,8 +6,8 @@ import base64
 
 
 class MpesaC2bCredential:
-    consumer_key = 'zrboAgmNWKFLSG0NTxUVl3cwCesUA4o9GGvmg3FIJU24PfJA'
-    consumer_secret = 'TKoCGAUP3wBwb7L9KFktZD753TE9QcxtZmzLbNcYMD0pqVuwQrJi7VNHXm0KS2gd'
+    consumer_key = 'AvHdFFuzTV1XdGOtKTg78wzcK1rxW1e6Tr2wlHkvSgJXlbQt'
+    consumer_secret = 'vaT9C8Bx1l49R3imXMuTlcwpmAwvEA50usGhRw5As4WcGtBMzCA262nA05F1g8Kc'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
 
@@ -22,7 +22,7 @@ class LipanaMpesaPpassword:
     lipa_time = datetime.now().strftime('%Y%m%d%H%M%S')
     Business_short_code = "174379"
     OffSetValue = '0'
-    passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
+    passkey ='bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
 
     data_to_encode = Business_short_code + passkey + lipa_time
 
